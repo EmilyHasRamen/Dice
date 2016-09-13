@@ -1,6 +1,5 @@
 
 
-
 void setup()
 {
 	size(400,400);
@@ -11,9 +10,14 @@ void draw()
 
 	//your code here
 	background(0);
-	for(int x=20;  x<350; x = x + 135){
-		Die firstDice = new Die(x,150);
+	for(int y=10; y<=200; y+=75){
+		for(int x=10; x<=200; x+=75){
+
+		Die firstDice = new Die(x,y);
+		firstDice.roll();
 		firstDice.show();
+
+		}
 
 	}
 
@@ -30,13 +34,13 @@ class Die //models one single dice cube
 	Die(int x, int y) //constructor
 	{
 		//variable initializations here
-		value= (int)(Math.random()*7);
 		myX=x;
 		myY=y;
 	}
 	void roll()
 	{
 		//your code here
+		value= (int)(Math.random()*6)+1;
 
 	}
 	void show()
@@ -44,8 +48,15 @@ class Die //models one single dice cube
 		//your code here
 		noStroke();
 		fill(255);
-		rect(myX,myY,75,75,7);
+		rect(myX,myY,50,50,7);
 		fill(0);
+		
+		if (value==1){
+			ellipse(35, 35, 10, 10);
+		}
+			
 
 	}
 }
+
+
