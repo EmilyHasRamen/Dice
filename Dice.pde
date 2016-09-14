@@ -7,10 +7,10 @@ void draw()
 {
 
 	//your code here
-	background(0);
+	background(25,25,25);
 	int nSum = 0;
-	for(int y=10; y<=200; y+=75){
-		for(int x=10; x<=200; x+=75){
+	for(int y=100; y<=290; y+=75){
+		for(int x=100; x<=290; x+=75){
 
 		Die myDie = new Die(x,y);
 		myDie.roll();
@@ -51,7 +51,7 @@ class Die //models one single dice cube
 		fill(255);
 		rect(myX,myY,50,50,7);
 		fill(0);
-		
+
 		switch (value) {
 			case 1:  
 					 println("roll value = "+value);
