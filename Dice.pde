@@ -21,6 +21,13 @@ void draw()
 		}
 
 	}
+	PFont f;                           // STEP 1 Declare PFont variable
+	f = createFont("Arial",16,true);   // STEP 2 Create Font
+//	background(255);                   // white background
+	textFont(f,36);                    // STEP 3 Specify font to be used
+//	fill(0);                           // STEP 4 Specify font color black
+	fill(255);                         // STEP 4 Specify font color white
+	text("Sum = "+nSum,100,375);        // STEP 5 Display Text
 
 }
 void mousePressed()
