@@ -16,7 +16,7 @@ void draw()
 		myDie.roll();
 		myDie.show();
 		nSum += myDie.value;
-		println("value="+myDie.value+"; sum="+nSum);
+		
 
 		}
 
@@ -61,29 +61,29 @@ class Die //models one single dice cube
 
 		switch (value) {
 			case 1:  
-					 println("roll value = "+value);
+					 
 					 ellipse(myX+25, myY+25, 10, 10);
 					 break;
 			case 2:  
-					 println("roll value = "+value);
+					
 					 ellipse(myX+15, myY+25, 10, 10);
 					 ellipse(myX+35, myY+25, 10, 10);
 					 break;
 			case 3:  
-					 println("roll value = "+value);
+					
 					 ellipse(myX+15, myY+15, 10, 10);
 					 ellipse(myX+25, myY+25, 10, 10);
 					 ellipse(myX+35, myY+35, 10, 10);
 					 break;
 			case 4:  
-					 println("roll value = "+value);
+					
 					 ellipse(myX+15, myY+15, 10, 10);
 					 ellipse(myX+35, myY+35, 10, 10);
 					 ellipse(myX+35, myY+15, 10, 10);
 					 ellipse(myX+15, myY+35, 10, 10);
 					 break;
 			case 5:  
-					 println("roll value = "+value);
+					 
 					 ellipse(myX+15, myY+15, 10, 10);
 					 ellipse(myX+35, myY+35, 10, 10);
 					 ellipse(myX+35, myY+15, 10, 10);
@@ -91,7 +91,7 @@ class Die //models one single dice cube
 					 ellipse(myX+25, myY+25, 10, 10);
 					 break;
 			case 6:  
-					 println("roll value = "+value);
+					 
 					 ellipse(myX+15, myY+15, 10, 10);
 					 ellipse(myX+35, myY+35, 10, 10);
 					 ellipse(myX+35, myY+15, 10, 10);
@@ -99,7 +99,7 @@ class Die //models one single dice cube
 					 ellipse(myX+15, myY+25, 10, 10);
 					 ellipse(myX+35, myY+25, 10, 10);
 					 break;
-			default: println("roll value = invalid");
+			default: ;
 		}
 			
 
